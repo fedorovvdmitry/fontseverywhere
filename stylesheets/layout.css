@@ -138,8 +138,21 @@ main::-webkit-scrollbar {
     text-decoration: none;
 }
 
-.Helvetica {
-    font-family: "Helvetica, sans-serif";
+.helvetica {
+    font-family: "Helvetica";
+}
+
+.onyx {
+    font-family: "Onyx";
+    text-transform: uppercase;
+}
+
+.legothick {
+    font-family: "legothick";
+}
+
+.AvantGarde {
+    font-family: "AvantGarde";
 }
 
 footer {
