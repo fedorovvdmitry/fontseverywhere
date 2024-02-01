@@ -1,0 +1,152 @@
+body {
+    background-color: #F7F7F7;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 23.93%);
+}
+
+header {
+    display: flex;
+}
+
+.box_white {
+    margin: 8px 8px 0 8px;
+    padding: 6px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
+    width: max-content;
+    text-decoration: none;
+
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    font-weight: 400;
+    width: max-content;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    overflow: scroll;
+}
+
+main::-webkit-scrollbar {
+    width: 0;
+}
+
+.card {
+    margin-right: 8px;
+    padding: 40px;
+    border-radius: 40px;
+    border-color: black;
+    border: 1px solid;
+    width: 30vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.card_cover {
+    width: 20vw;
+    height: 30vw;
+}
+
+.mcdonalds {
+    background-image: url(../images/mcdonalds.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+.mcdonalds:hover {
+    background-image: url(../images/mcdonalds.png);
+    transition: 0.5s;
+
+}
+
+.nirvana {
+    background-image: url(../images/nirvana.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lego{
+    background-image: url(../images/lego.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+.lego:hover {
+    background-image: url(../images/lego.png);
+    transition: 0.5s;
+
+}
+
+.adidas{
+    background-image: url(../images/adidas.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hse {
+    background-image: url(../images/hse.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gta {
+    background-image: url(../images/gta.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.supreme {
+    background-image: url(../images/supreme.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+}
+
+.info_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card p {
+    font-size: 40px;
+
+}
+
+.button_info {
+    padding: 6px 9px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
+    width: max-content;
+    text-decoration: none;
+}
+
+.Helvetica {
+    font-family: "Helvetica, sans-serif";
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
