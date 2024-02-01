@@ -155,6 +155,19 @@ main::-webkit-scrollbar {
     font-family: "AvantGarde";
 }
 
+.Druk {
+    font-family: "Druk";
+    text-transform: uppercase;
+}
+
+.Pricedown {
+    font-family: "Pricedown";
+}
+
+.Futura {
+    font-family: "Futura";
+}
+
 footer {
     margin-top: 40px;
     padding: 20px;

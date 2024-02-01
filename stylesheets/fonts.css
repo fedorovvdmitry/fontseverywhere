@@ -18,6 +18,24 @@
 
 @font-face {
     font-family: "AvantGarde";
-    src: url("../fonts/AvantGarde.ttf") format("opentype");
+    src: url("../fonts/avant_garde.ttf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Druk";
+    src: url("../fonts/DrukCyr_Medium.ttf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Pricedown";
+    src: url("../fonts/pricedown.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/FuturaDemiC_Italic.ttf") format("opentype");
     font-weight: normal;
 }
