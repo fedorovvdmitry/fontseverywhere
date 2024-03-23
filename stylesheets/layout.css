@@ -2,6 +2,10 @@ body {
     overflow: hidden;
 }
 
+.about {
+    display: none;
+}
+
 .white_bg {
     background-color: #F7F7F7;
     background-repeat: no-repeat;
