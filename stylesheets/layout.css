@@ -1,10 +1,27 @@
 body {
+    overflow: hidden;
+}
+
+.white_bg {
     background-color: #F7F7F7;
     background-repeat: no-repeat;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 23.93%);
 }
 
+.green_bg {
+    background-color: #90927C;
+}
+
+.green_bg .tooltip {
+    background-color: #A7C0FF;
+}
+
+.green_bg .tooltip .popuptext {
+    background-color: #A7C0FF;
+}
+
 header {
+    position: absolute;
     display: flex;
 }
 
@@ -16,6 +33,7 @@ header {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
     width: max-content;
     text-decoration: none;
+    cursor: pointer;
 
 }
 
@@ -27,9 +45,10 @@ p {
 }
 
 main {
-    margin-top: 40px;
+    height: 100vh;
     display: flex;
-    overflow: scroll;
+    background-image: url(../images/bg.svg);
+    background-size: 100%;
 }
 
 main::-webkit-scrollbar {
@@ -49,9 +68,54 @@ main::-webkit-scrollbar {
     justify-content: space-between
 }
 
-.card_cover {
-    width: 20vw;
-    height: 30vw;
+
+.tooltip {
+    width: 2vw;
+    height: 2vw;
+    background-color: #172FF2;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
+    font-size: 2vw;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tooltip .popuptext {
+    visibility: hidden;
+    background-color: #172FF2;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+}
+
+.popuptext {
+    width: max-content;
+}
+
+.tooltip .show {
+    visibility: visible;
+    -webkit-animation: fadeIn .2s;
+    animation: fadeIn .2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
 .mcdonalds {
@@ -59,13 +123,18 @@ main::-webkit-scrollbar {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    left: 300px;
+    cursor: grab;
 }
 
-.mcdonalds:hover {
-    background-image: url(../images/mcdonalds.png);
-    transition: 0.5s;
-
+.mcdonalds .tooltip {
+    top: 150px;
+    left: 250px;
 }
 
 .nirvana {
@@ -73,27 +142,56 @@ main::-webkit-scrollbar {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    width: 21vw;
+    height: 21vw;
+    position: absolute;
+    z-index: 99;
+    top: 300px;
+    left: 100px;
+    cursor: grab;
+}
+
+.nirvana .tooltip {
+    top: 260px;
+    right: 10px;
 }
 
 .lego{
     background-image: url(../images/lego.png);
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    width: 21vw;
+    height: 35vw;
+    position: absolute;
+    z-index: 98;
+    top: 200px;
+    left: 600px;
+    cursor: grab;
 }
 
-.lego:hover {
-    background-image: url(../images/lego.png);
-    transition: 0.5s;
-
+.lego .tooltip {
+    top: 170px;
+    left: 170px;
 }
 
-.adidas{
+.adidas {
     background-image: url(../images/adidas.png);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    width: 15vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 97;
+    top: 350px;
+    right: 60px;
+    cursor: grab;
+}
+
+.adidas .tooltip {
+    top: 80px;
+    left: 130px;
 }
 
 .hse {
@@ -101,6 +199,18 @@ main::-webkit-scrollbar {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    width: 38vw;
+    height: 32vw;
+    position: absolute;
+    z-index: 96;
+    bottom: -120px;
+    right: 90px;
+    cursor: grab;
+}
+
+.hse .tooltip {
+    top: 100px;
+    left: 100px;
 }
 
 .gta {
@@ -108,6 +218,18 @@ main::-webkit-scrollbar {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    width: 38vw;
+    height: 32vw;
+    position: absolute;
+    z-index: 95;
+    top: 50px;
+    right: 250px;
+    cursor: grab;
+}
+
+.gta .tooltip {
+    top: 100px;
+    left: 200px;
 }
 
 .supreme {
@@ -115,8 +237,58 @@ main::-webkit-scrollbar {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(30deg);
+    width: 20vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 94;
+    top: 80px;
+    left: 50px;
+    cursor: grab;
 }
+
+.supreme .tooltip {
+    top: -15px;
+    left: 45%;
+}
+
+.s7 {
+    background-image: url(../images/s7.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 98;
+    top: 80px;
+    right: -350px;
+    cursor: grab;
+}
+
+.s7 .tooltip {
+    top: 10px;
+    left: 17%;
+}
+
+.alfabank {
+    background-image: url(../images/alfabank.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 15vw;
+    position: absolute;
+    z-index: 93;
+    bottom: -60px;
+    left: 400px;
+    cursor: grab;
+}
+
+.alfabank .tooltip {
+    top: 30px;
+    left: 50%;
+}
+
 
 .info_card {
     display: flex;
@@ -168,6 +340,14 @@ main::-webkit-scrollbar {
     font-family: "Futura";
 }
 
+.Nimbus {
+    font-family: "Nimbus";
+}
+
+.Styrene {
+    font-family: "Styrene";
+}
+
 footer {
     margin-top: 40px;
     padding: 20px;
@@ -175,4 +355,22 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+  
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
 }

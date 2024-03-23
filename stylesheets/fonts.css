@@ -39,3 +39,13 @@
     src: url("../fonts/FuturaDemiC_Italic.ttf") format("opentype");
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "Nimbus";
+    src: url('../fonts/NimbusSanL-Regu.ttf');
+}
+
+@font-face {
+    font-family: "Styrene";
+    src: url('../fonts/StyreneAWeb-Black.ttf');
+}
