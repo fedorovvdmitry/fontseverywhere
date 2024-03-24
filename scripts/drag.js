@@ -30,6 +30,37 @@ document.addEventListener('DOMContentLoaded', () => {
     return false;
   };
 
+  redbull.onmousedown = function(event) {
+
+    let shiftX = event.clientX - redbull.getBoundingClientRect().left;
+    let shiftY = event.clientY - redbull.getBoundingClientRect().top;
+
+    moveAt(event.pageX, event.pageY);
+    
+    function moveAt(pageX, pageY) {
+      redbull.style.left = pageX - shiftX + 'px';
+      redbull.style.top = pageY - shiftY + 'px';
+    }
+    
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+    
+    document.addEventListener('mousemove', onMouseMove);
+    
+    redbull.onmouseup = function() {
+      document.removeEventListener('mousemove', onMouseMove);
+      redbull.onmouseup = null;
+    };
+
+    lego.onclick = function() {
+      document.lego.style.zInsex = prompt('zInsex?', '+2');
+    };
+  }
+  lego.ondragstart = function() {
+    return false;
+  };
+
 
   lego.onmousedown = function(event) {
 
