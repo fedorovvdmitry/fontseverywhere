@@ -129,6 +129,15 @@ header {
     animation: scale_obgects 4s;
 }
 
+@keyframes scale_obgects {
+    70% {
+      transform: scale( 1 )
+    }
+    90% {
+      transform: scale( 1.25 )
+    }
+}
+
 .mcdonalds .tooltip {
     top: 40%;
     left: 70%;
