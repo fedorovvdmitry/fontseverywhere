@@ -19,6 +19,61 @@
 }
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
+    .mcdonalds {
+        width: 40vw;
+        height: 40vw;
+        top: 18vw;
+        left: 20vw;
+    }
+
+    .nirvana {
+        top: 80vw;
+        left: 2vw;
+    }
+
+    .lego {
+        width: 41vw;
+        height: 55vw;
+        top: 30vw;
+        left: 60vw;
+    }
+
+    .adidas {
+        top: 40vw;
+        left: 80vw;
+    }
+
+    .hse {
+        width: 48vw;
+        height: 42vw;
+        top: 90vw;
+        left: 50vw;
+    }
+
+    .gta {
+        top: 10vw;
+        left: 60vw;
+    }
+
+    .supreme {
+        top: 18vw;
+        left: 2vw;
+    }
+
+    .s7 {
+        top: 18vw;
+        left: 75vw;
+    }
+
+    .alfabank {
+        top: 18vw;
+        left: 2vw;
+    }
+
+    .redbull {
+        top: 18vw;
+        left: 2vw;
+    }
 
 }
 

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
   let zIndexCounter = 100;
     
   mcdonalds.onmousedown = function(event) { // отследить нажатие

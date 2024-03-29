@@ -6,6 +6,12 @@ body {
     display: none;
 }
 
+.popup_about {
+    width: 100%;
+    height: 100%;
+    background-color: #90927C;
+}
+
 .white_bg {
     background-color: #F7F7F7;
     background-repeat: no-repeat;
@@ -140,8 +146,8 @@ main::-webkit-scrollbar {
     height: 25vw;
     position: absolute;
     z-index: 100;
-    top: 150px;
-    left: 300px;
+    top: 9vw;
+    left: 18vw;
     cursor: grab;
 }
 
@@ -159,8 +165,8 @@ main::-webkit-scrollbar {
     height: 21vw;
     position: absolute;
     z-index: 99;
-    top: 300px;
-    left: 100px;
+    top: 19vw;
+    left: 6vw;
     cursor: grab;
 }
 
@@ -178,8 +184,8 @@ main::-webkit-scrollbar {
     height: 35vw;
     position: absolute;
     z-index: 98;
-    top: 200px;
-    left: 600px;
+    top: 16vw;
+    left: 38vw;
     cursor: grab;
 }
 
@@ -310,7 +316,7 @@ main::-webkit-scrollbar {
     width: 5vw;
     height: 20vw;
     position: absolute;
-    z-index: 100;
+    z-index: 99;
     top: 10%;
     left: 45%;
     cursor: grab;
@@ -381,6 +387,7 @@ main::-webkit-scrollbar {
 }
 
 footer {
+    display: none;
     padding: 20px;
     border-top: 1px solid black;
     display: flex;
@@ -389,25 +396,7 @@ footer {
 }
 
 .hse_logo {
-    width: 194px;
-    height: 73px;
+    width: 20vw;
+    height: 10vw;
     fill: black;
-}
-
-
-
-#mydiv {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-}
-  
-#mydivheader {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
 }
