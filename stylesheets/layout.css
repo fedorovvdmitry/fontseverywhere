@@ -190,8 +190,8 @@ header {
     height: 18vw;
     position: absolute;
     z-index: 97;
-    top: 350px;
-    right: 60px;
+    top: 30vw;
+    right: 5vw;
     cursor: grab;
 }
 
@@ -209,8 +209,8 @@ header {
     height: 32vw;
     position: absolute;
     z-index: 96;
-    bottom: -120px;
-    right: 90px;
+    top: 25vw;
+    right: 8vw;
     cursor: grab;
 }
 
@@ -253,7 +253,7 @@ header {
 }
 
 .supreme .tooltip {
-    top: -15px;
+    top: -20%;
     left: 45%;
 }
 

@@ -134,6 +134,7 @@
     .tooltip {
         width: 6vw;
         height: 6vw;
+        font-size: 6vw;
     }
 
     .mcdonalds {
@@ -151,13 +152,15 @@
     .lego {
         width: 41vw;
         height: 62vw;
-        top: 30vw;
+        top: 35vw;
         left: 40vw;
     }
 
     .adidas {
-        top: 40vw;
-        left: 80vw;
+        width: 25vw;
+        height: 28vw;
+        top: 50vw;
+        right: 2vw;
     }
 
     .hse {
@@ -168,13 +171,17 @@
     }
 
     .gta {
+        width: 35vw;
+        height: 42vw;
         top: 10vw;
-        left: 60vw;
+        left: 55vw;
     }
 
     .supreme {
-        top: 18vw;
-        left: 2vw;
+        width: 30vw;
+        height: 16vw;
+        top: 65vw;
+        left: 20vw;
     }
 
     .s7 {
