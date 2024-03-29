@@ -1,0 +1,8 @@
+@keyframes scale_obgects {
+    70% {
+      transform: scale( 1 )
+    }
+    90% {
+      transform: scale( 1.25 )
+    }
+}

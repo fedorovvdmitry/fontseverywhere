@@ -6,9 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  const popup_about = document.querySelectorAll('.popup_about')
+  const popup_about = document.querySelectorAll('.button_about')
     popup_about.addEventListener('click', () => {
-      popup_about.children[0].classList.toggle('show')
+      popup_about.classList.toggle('show')
     })
+
+    // function openPopupAbout () {
+    //   let popup_about = document.querySelectorAll('.popup_about');
+    //   popup_about.classList.toggle("show");
+    // }
   
 })
