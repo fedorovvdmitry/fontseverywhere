@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  mcdonalds.onmousedown = function(event) { // (1) отследить нажатие
+  let zIndexCounter = 100;
+    
+  mcdonalds.onmousedown = function(event) { // отследить нажатие
+
+    mcdonalds.style.zIndex = zIndexCounter++; // увеличить z-index и присваивоить элементу
 
     let shiftX = event.clientX - mcdonalds.getBoundingClientRect().left;
     let shiftY = event.clientY - mcdonalds.getBoundingClientRect().top;
@@ -17,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
       moveAt(event.pageX, event.pageY);
     }
     
-    // (3) перемещать по экрану
+    // перемещать по экрану
     document.addEventListener('mousemove', onMouseMove);
     
-    // (4) положить мяч, удалить более ненужные обработчики событий
+    // положить мяч, удалить более ненужные обработчики событий
     mcdonalds.onmouseup = function() {
       document.removeEventListener('mousemove', onMouseMove);
       mcdonalds.onmouseup = null;
@@ -31,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   redbull.onmousedown = function(event) {
+
+    redbull.style.zIndex = zIndexCounter++;
 
     let shiftX = event.clientX - redbull.getBoundingClientRect().left;
     let shiftY = event.clientY - redbull.getBoundingClientRect().top;
@@ -63,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   lego.onmousedown = function(event) {
+    
+    lego.style.zIndex = zIndexCounter++;
 
     let shiftX = event.clientX - lego.getBoundingClientRect().left;
     let shiftY = event.clientY - lego.getBoundingClientRect().top;
@@ -85,16 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
       lego.onmouseup = null;
     };
 
-    lego.onclick = function() {
-      document.lego.style.zInsex = prompt('zInsex?', '+2');
-    };
   }
   lego.ondragstart = function() {
     return false;
   };
   
-
   nirvana.onmousedown = function(event) {
+
+    nirvana.style.zIndex = zIndexCounter++;
 
     let shiftX = event.clientX - nirvana.getBoundingClientRect().left;
     let shiftY = event.clientY - nirvana.getBoundingClientRect().top;
@@ -126,6 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let shiftX = event.clientX - adidas.getBoundingClientRect().left;
     let shiftY = event.clientY - adidas.getBoundingClientRect().top;
 
+    adidas.style.zIndex = zIndexCounter++;
+
     moveAt(event.pageX, event.pageY);
     
     function moveAt(pageX, pageY) {
@@ -153,6 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let shiftX = event.clientX - hse.getBoundingClientRect().left;
     let shiftY = event.clientY - hse.getBoundingClientRect().top;
 
+    hse.style.zIndex = zIndexCounter++;
+
     moveAt(event.pageX, event.pageY);
     
     function moveAt(pageX, pageY) {
@@ -176,6 +186,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   gta.onmousedown = function(event) {
+
+    gta.style.zIndex = zIndexCounter++;
 
     let shiftX = event.clientX - gta.getBoundingClientRect().left;
     let shiftY = event.clientY - gta.getBoundingClientRect().top;
@@ -204,6 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   supreme.onmousedown = function(event) {
 
+    supreme.style.zIndex = zIndexCounter++;
+
     let shiftX = event.clientX - supreme.getBoundingClientRect().left;
     let shiftY = event.clientY - supreme.getBoundingClientRect().top;
 
@@ -231,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   s7.onmousedown = function(event) {
 
+    s7.style.zIndex = zIndexCounter++;
+
     let shiftX = event.clientX - s7.getBoundingClientRect().left;
     let shiftY = event.clientY - s7.getBoundingClientRect().top;
 
@@ -257,6 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   alfabank.onmousedown = function(event) {
+
+    alfabank.style.zIndex = zIndexCounter++;
 
     let shiftX = event.clientX - alfabank.getBoundingClientRect().left;
     let shiftY = event.clientY - alfabank.getBoundingClientRect().top;
